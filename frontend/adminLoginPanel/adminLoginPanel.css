@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+		sans-serif;
+	background-color: #f5f5f5;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-container {
+	width: 100%;
+	max-width: 400px;
+	padding: 20px;
+}
+
+.login-box {
+	background-color: #e8e8e8;
+	border-radius: 15px;
+	padding: 40px 30px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+/* Logo Section */
+.logo-section {
+	margin-bottom: 30px;
+}
+
+.logo {
+	margin-bottom: 10px;
+}
+
+.logo-text {
+	background-color: #8b4a6b;
+	color: white;
+	padding: 12px 16px;
+	border-radius: 6px;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+}
+
+.company-name {
+	font-size: 16px;
+	font-weight: 500;
+	color: #333;
+	letter-spacing: 1px;
+}
+
+/* Form Styles */
+.login-form {
+	text-align: left;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 500;
+	color: #333;
+	font-size: 14px;
+}
+
+.form-control {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 14px;
+	background-color: white;
+	box-sizing: border-box;
+	transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+	outline: none;
+	border-color: #8b4a6b;
+	box-shadow: 0 0 0 2px rgba(139, 74, 107, 0.2);
+}
+
+/* Button */
+.btn-login {
+	width: 100%;
+	padding: 12px;
+	background-color: #8b4a6b;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 10px;
+}
+
+.btn-login:hover {
+	background-color: #7a4260;
+}
+
+.btn-login:active {
+	background-color: #6b3a55;
+	transform: translateY(1px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+	.login-container {
+		padding: 15px;
+	}
+
+	.login-box {
+		padding: 30px 20px;
+	}
+}

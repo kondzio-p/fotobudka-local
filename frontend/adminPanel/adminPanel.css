@@ -1,0 +1,275 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+		sans-serif;
+	font-size: 14px;
+	background-color: #f8f9fa;
+}
+
+/* Sidebar Styles */
+.sidebar {
+	background-color: #eec9d2;
+	min-height: 100vh;
+	padding: 0;
+}
+
+.sidebar-header {
+	background-color: #ffeaef;
+	padding: 20px 15px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+.logo {
+	margin-bottom: 15px;
+}
+
+.logo-text {
+	background-color: #333;
+	color: white;
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.logo small {
+	font-size: 12px;
+	color: #666;
+	font-weight: normal;
+}
+
+.sidebar-header h5 {
+	margin: 0;
+	color: #333;
+	font-weight: 500;
+}
+
+.sidebar-nav {
+	padding: 20px 0;
+}
+
+.sidebar-nav .nav-item {
+	margin-bottom: 5px;
+}
+
+.sidebar-nav .nav-link {
+	color: #333;
+	padding: 12px 20px;
+	border: none;
+	background: none;
+	text-decoration: none;
+	border-radius: 0;
+	font-weight: 500;
+}
+
+.sidebar-nav .nav-link:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #333;
+}
+
+.sidebar-nav .nav-link.active {
+	background-color: #333;
+	color: white;
+	margin: 0 15px;
+	border-radius: 4px;
+}
+
+.sidebar-nav .nav-link.add-page {
+	color: #666;
+	font-size: 13px;
+}
+
+/* Main Content */
+.main-content {
+	background-color: white;
+	min-height: 100vh;
+	padding: 0;
+}
+
+.content-header {
+	background-color: #f8f9fa;
+	padding: 15px 30px;
+	border-bottom: 1px solid #e9ecef;
+}
+
+.edit-notice {
+	font-size: 14px;
+	color: #666;
+	font-weight: 500;
+}
+
+.content-body {
+	padding: 30px;
+}
+
+/* Section Styles */
+.section {
+	margin-bottom: 40px;
+}
+
+.section h4 {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+	color: #333;
+	font-size: 14px;
+}
+
+.form-control {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 8px 12px;
+	font-size: 14px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.form-control:focus {
+	border-color: #80bdff;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+	outline: 0;
+}
+
+.small-input {
+	max-width: 200px;
+}
+
+/* Video Frames */
+.video-frames {
+	display: flex;
+	gap: 15px;
+	margin-top: 15px;
+}
+
+.video-frame {
+	width: 150px;
+	height: 200px;
+	background-color: #f8f9fa;
+	border: 2px dashed #ddd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+}
+
+.btn-add {
+	border: none;
+	background: none;
+	font-size: 24px;
+	color: #666;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #ddd;
+}
+
+.btn-add:hover {
+	background-color: #e9ecef;
+	color: #333;
+}
+
+/* Buttons */
+.btn {
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 6px 12px;
+	font-weight: 500;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.btn-secondary {
+	background-color: #6c757d;
+	border-color: #6c757d;
+	color: white;
+}
+
+.btn-secondary:hover {
+	background-color: #5a6268;
+	border-color: #545b62;
+}
+
+.btn-primary {
+	background-color: #007bff;
+	border-color: #007bff;
+	color: white;
+}
+
+.btn-primary:hover {
+	background-color: #0069d9;
+	border-color: #0062cc;
+}
+
+.btn-sm {
+	padding: 4px 8px;
+	font-size: 12px;
+}
+
+/* Preview items for video frames and gallery in the admin panel. These classes
+   mirror the original dashed box style used for empty video-frame slots so
+   uploaded images and videos integrate seamlessly with the existing layout. */
+.video-frame-preview,
+.gallery-item-preview {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  background-color: #f8f9fa;
+  border: 2px dashed #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.video-frame-preview button,
+.gallery-item-preview button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+}
+
+/* City placeholder */
+.city-placeholder {
+	background-color: #f8f9fa;
+	padding: 6px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.sidebar {
+		min-height: auto;
+	}
+
+	.content-body {
+		padding: 20px 15px;
+	}
+
+	.video-frames {
+		flex-wrap: wrap;
+	}
+
+	.video-frame {
+		width: 100px;
+		height: 150px;
+	}
+}

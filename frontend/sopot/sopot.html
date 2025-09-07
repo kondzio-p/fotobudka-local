@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Zajmiemy się atrakcjami na Twojej imprezie! Profesjonalne usługi eventowe w Chojnicach i okolicach. Oferujemy fotobudkę 360°, fotolustro, ciężki dym, fontanny iskier i neony LED. Tworzymy niezapomniane pamiątki z wesel, imprez firmowych i urodzin."
+		/>
+		<meta name="theme-color" content="#eec9d2" />
+		<title>Fotobudka Chojnice - OG Events</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/og-events-logo-prof.png"
+    />
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/style.css" />
+
+		<!-- Preload ważnych obrazów -->
+    <link rel="preload" href="../images/360.png" as="image" />
+    <link rel="preload" href="../images/mirror.jpg" as="image" />
+    <link rel="preload" href="../images/heavysmoke.jpg" as="image" />
+    <link rel="preload" href="../images/fountain.jpg" as="image" />
+    <link rel="preload" href="../images/neons.jpg" as="image" />
+
+		<!-- Removed video preloads to avoid browser warnings for unsupported `as` in some contexts -->
+	<script>window.PAGE_ID = 2;</script>
+</head>
+	<body>
+		<!-- Tło globalne -->
+		<div id="background-fixed"></div>
+
+		<!-- Główny nagłówek strony -->
+		<header class="header">
+			<div class="nav-container">
+				<!-- Logo i menu na desktopie -->
+				<div class="logo d-none d-md-block">
+					<img
+                        src="../images/og-events-logo-white.png"
+						alt="OG Events Logo"
+						onerror="this.outerHTML='<div style=\'color: #8b4b7a; font-weight: bold; font-size: 24px;\'>OG<br><span style=\'font-size: 12px; font-weight: normal;\'>EVENT SPOT</span></div>'"
+					/>
+				</div>
+
+				<nav class="d-none d-md-block">
+					<ul class="nav-menu">
+						<li>
+							<a href="#" class="active">Strona główna</a>
+						</li>
+						<li><a href="#welcome">O nas</a></li>
+						<li><a href="#contact">Kontakt</a></li>
+					</ul>
+				</nav>
+
+				<!-- Ikony social media na desktopie -->
+				<div class="social-icons d-none d-md-flex">
+					<a
+						href="https://www.facebook.com/profile.php?id=61553668165091"
+						target="_blank"
+						class="social-icon facebook"
+						aria-label="Facebook"
+                ><img src="../images/fb.svg" width="20px" alt=""
+					/></a>
+					<a
+						href="https://www.instagram.com/og.eventspot/"
+						target="_blank"
+						class="social-icon instagram"
+						aria-label="Instagram"
+                ><img src="../images/insta.svg" width="25px" alt=""
+					/></a>
+				</div>
+
+				<!-- Układ mobilny -->
+				<div class="d-md-none w-100">
+					<!-- Górny pasek: logo + social media -->
+					<div class="header-top-row">
+						<div class="logo">
+							<img
+                                src="../images/og-events-logo-white.png"
+								alt="OG Events Logo"
+								onerror="this.outerHTML='<div style=\'color: #8b4b7a; font-weight: bold; font-size: 18px;\'>OG<br><span style=\'font-size: 10px; font-weight: normal;\'>EVENT SPOT</span></div>'"
+							/>
+						</div>
+
+						<div class="social-icons">
+							<a
+								href="https://www.facebook.com/profile.php?id=61553668165091"
+								target="_blank"
+								class="social-icon facebook"
+								aria-label="Facebook"
+                                ><img src="../images/fb.svg" width="16px" alt=""
+							/></a>
+							<a
+								href="https://www.instagram.com/og.eventspot/"
+								target="_blank"
+								class="social-icon instagram"
+								aria-label="Instagram"
+                                ><img
+                                    src="../images/insta.svg"
+                                    width="18px"
+                                    alt=""
+                            /></a>
+						</div>
+					</div>
+
+					<!-- Menu mobilne -->
+					<nav>
+						<ul class="nav-menu">
+							<li>
+								<a href="#" class="active">Główna</a>
+							</li>
+							<li><a href="#welcome">O nas</a></li>
+							<li><a href="#contact">Kontakt</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Główna część strony -->
+		<main class="main-content">
+			<div class="photo-gallery">
+				<!-- Ramka 1 -->
+				<div class="photo-frame">
+					<video
+						src="videos/film1.webm"
+						alt="Event video 1"
+						autoplay
+						muted
+						loop
+						playsinline
+						data-start-time="7"
+						onerror="this.outerHTML='<img src=\'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDI4MCAzMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMzIwIiBmaWxsPSIjRjBGMEYwIi8+Cjx0ZXh0IHg9IjE0MCIgeT0iMTY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkV2ZW50IFZpZGVvIDE8L3RleHQ+PC9zdmc+\' alt=\'Event Video 1\'/>'"
+					></video>
+				</div>
+
+				<!-- Ramka 2 -->
+				<div class="photo-frame">
+					<video
+						src="videos/film2.webm"
+						alt="Event video 2"
+						autoplay
+						muted
+						loop
+						playsinline
+						data-start-time="3"
+						onerror="this.outerHTML='<img src=\'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDI4MCAzMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMzIwIiBmaWxsPSIjRjBGMEYwIi8+Cjx0ZXh0IHg9IjE0MCIgeT0iMTY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkV2ZW50IFZpZGVvIDI8L3RleHQ+PC9zdmc+\' alt=\'Event Video 2\'/>'"
+					></video>
+				</div>
+
+				<!-- Ramka 3 -->
+				<div class="photo-frame">
+					<video
+						src="videos/film1.webm"
+						alt="Event video 3"
+						autoplay
+						muted
+						loop
+						playsinline
+						data-start-time="2"
+						onerror="this.outerHTML='<img src=\'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDI4MCAzMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMzIwIiBmaWxsPSIjRjBGMEYwIi8+Cjx0ZXh0IHg9IjE0MCIgeT0iMTY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkV2ZW50IFZpZGVvIDM8L3RleHQ+PC9zdmc+\' alt=\'Event Video 3\'/>'"
+					></video>
+				</div>
+
+				<!-- Ramka 4 -->
+				<div class="photo-frame">
+					<video
+						src="videos/film2.webm"
+						alt="Event video 4"
+						autoplay
+						muted
+						loop
+						playsinline
+						data-start-time="4"
+						onerror="this.outerHTML='<img src=\'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDI4MCAzMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMzIwIiBmaWxsPSIjRjBGMEYwIi8+Cjx0ZXh0IHg9IjE0MCIgeT0iMTY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkV2ZW50IFZpZGVvIDQ8L3RleHQ+PC9zdmc+\' alt=\'Event Video 4\'/>'"
+					></video>
+				</div>
+			</div>
+		</main>
+
+		<!-- Sekcja powitalna (hero copy + CTA) -->
+		<section id="welcome" class="welcome-section">
+			<div class="container-fluid px-0">
+				<div
+					class="welcome-header text-center py-5"
+					style="background: rgba(255, 255, 255, 0.9)"
+				>
+					<h2 class="mb-3">
+						Witamy w
+						<span style="color: #801039; font-weight: bold"
+							>Fotobudka OG Event Spot!</span
+						>
+					</h2>
+					<p class="lead" style="color: #666">
+						Dopełniamy, by na Twoim wydarzeniu nie zabrakło
+						Atrakcji!
+					</p>
+				</div>
+
+				<!-- Sekcja oferty: karty usług -->
+				<div
+					class="offers-section py-5"
+					style="
+						background: linear-gradient(
+							135deg,
+							#f8f9fa 0%,
+							#e9ecef 100%
+						);
+					"
+				>
+					<div class="container">
+						<h3 class="text-center mb-5" style="color: #2c2c2c">
+							Nasza <span style="color: #801039">oferta</span>
+						</h3>
+
+						<div class="row g-4">
+							<!-- Karta: Fotobudka 360 -->
+							<div class="col-lg-4 col-md-6">
+								<div class="offer-card offer-card-360 h-100">
+									<div class="card-background"></div>
+									<div class="card-overlay"></div>
+									<div class="card-content">
+										<h4>Fotobudka 360</h4>
+										<p>
+											Wejdź do centrum uwagi z naszą
+											obrotową fotobudką 360°! Twórz
+											spektakularne, dynamiczne filmy w
+											zwolnionym tempie. Idealne na
+											wesela, imprezy firmowe i urodziny.
+											Gwarantujemy niezapomniane
+											wspomnienia i mnóstwo zabawy dla
+											wszystkich gości.
+										</p>
+									</div>
+									<div class="card-title-overlay">
+										<h4>Fotobudka 360</h4>
+									</div>
+								</div>
+							</div>
+
+							<!-- Karta: Fotolustro -->
+							<div class="col-lg-4 col-md-6">
+								<div class="offer-card offer-card-mirror h-100">
+									<div class="card-background"></div>
+									<div class="card-overlay"></div>
+									<div class="card-content">
+										<h4>Fotolustro</h4>
+										<p>
+											Magiczne lustro, które robi zdjęcia!
+											Interaktywne fotolustro z animacjami
+											i zabawnymi dodatkami. Goście mogą
+											pozować, robić selfie i od razu
+											drukować pamiątkowe zdjęcia.
+											Doskonałe na każdą okazję - od
+											eleganckich eventów po szalone
+											imprezy.
+										</p>
+									</div>
+									<div class="card-title-overlay">
+										<h4>Fotolustro</h4>
+									</div>
+								</div>
+							</div>
+
+							<!-- Karta: Ciężki dym -->
+							<div class="col-lg-4 col-md-6">
+								<div class="offer-card offer-card-smoke h-100">
+									<div class="card-background"></div>
+									<div class="card-overlay"></div>
+									<div class="card-content">
+										<h4>Ciężki dym</h4>
+										<p>
+											Stwórz bajkową atmosferę z naszym
+											efektem ciężkiego dymu! Gęsta, biała
+											mgła unosi się przy ziemi, tworząc
+											magiczny klimat podczas pierwszego
+											tańca, wejścia pary młodej czy
+											kluczowych momentów imprezy.
+											Całkowicie bezpieczny i
+											spektakularny.
+										</p>
+									</div>
+									<div class="card-title-overlay">
+										<h4>Ciężki dym</h4>
+									</div>
+								</div>
+							</div>
+
+							<!-- Karta: Fontanny iskier -->
+							<div class="col-lg-4 col-md-6 offset-lg-2">
+								<div
+									class="offer-card offer-card-fountain h-100"
+								>
+									<div class="card-background"></div>
+									<div class="card-overlay"></div>
+									<div class="card-content">
+										<h4>Fontanny iskier</h4>
+										<p>
+											Wybuchaj radością z naszymi
+											fontannami iskier! Zimne ognie
+											tworzą oszałamiające efekty świetlne
+											bez zagrożenia. Idealne na tort
+											weselny, pierwsze wejście czy
+											kulminacyjne momenty imprezy.
+											Bezpieczne, efektowne i
+											niezapomniane dla wszystkich gości.
+										</p>
+									</div>
+									<div class="card-title-overlay">
+										<h4>Fontanny iskier</h4>
+									</div>
+								</div>
+							</div>
+
+							<!-- Karta: Neonowe napisy -->
+							<div class="col-lg-4 col-md-6">
+								<div class="offer-card offer-card-neons h-100">
+									<div class="card-background"></div>
+									<div class="card-overlay"></div>
+									<div class="card-content">
+										<h4>Neonowe napisy</h4>
+										<p>
+											Świeć jaśniej niż gwiazdy z naszymi
+											neonowymi napisami LED!
+											Personalizowane napisy z imionami,
+											datami lub hasłami. Kolorowe
+											podświetlenie tworzy niesamowity
+											klimat i doskonałe tło do zdjęć.
+											Każdy event stanie się wyjątkowy i
+											Instagram-owy!
+										</p>
+									</div>
+									<div class="card-title-overlay">
+										<h4>Neonowe napisy</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /row -->
+					</div>
+					<!-- /container -->
+				</div>
+				<!-- /offers-section -->
+			</div>
+			<!-- /container-fluid -->
+		</section>
+
+		<!-- Sekcja: "My w liczbach" (statystyki) -->
+		<section
+			class="stats-section py-5"
+			style="
+				background: rgba(255, 255, 255, 0.95);
+				border-bottom-left-radius: 70px;
+			"
+			id="stats"
+		>
+			<div class="container">
+				<div class="text-center mb-5">
+					<h3 style="color: #2c2c2c">
+						<span style="color: #801039">My</span> w liczbach
+					</h3>
+				</div>
+
+				<!-- Trzy karty statystyk -->
+				<div class="row justify-content-center g-4">
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div
+							class="stat-card text-center p-4"
+							style="
+								background: #801039;
+								color: white;
+								border-radius: 15px;
+								box-shadow: 0 8px 25px rgba(139, 75, 122, 0.3);
+								transition: transform 0.3s ease;
+							"
+						>
+							<div
+								class="stat-number"
+								style="
+									font-size: 48px;
+									font-weight: bold;
+									margin-bottom: 10px;
+								"
+								data-final-value="50+"
+							>
+								200+
+							</div>
+							<div
+								class="stat-label"
+								style="font-size: 16px; font-weight: 500"
+							>
+								zadowolonych klientów
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div
+							class="stat-card text-center p-4"
+							style="
+								background: #801039;
+								color: white;
+								border-radius: 15px;
+								box-shadow: 0 8px 25px rgba(139, 75, 122, 0.3);
+								transition: transform 0.3s ease;
+							"
+						>
+							<div
+								class="stat-number"
+								style="
+									font-size: 48px;
+									font-weight: bold;
+									margin-bottom: 10px;
+								"
+								data-final-value="3 lat"
+							>
+								5 lat
+							</div>
+							<div
+								class="stat-label"
+								style="font-size: 16px; font-weight: 500"
+							>
+								na rynku
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div
+							class="stat-card text-center p-4"
+							style="
+								background: #801039;
+								color: white;
+								border-radius: 15px;
+								box-shadow: 0 8px 25px rgba(139, 75, 122, 0.3);
+								transition: transform 0.3s ease;
+							"
+						>
+							<div
+								class="stat-number"
+								style="
+									font-size: 48px;
+									font-weight: bold;
+									margin-bottom: 10px;
+								"
+								data-final-value="∞"
+							>
+								∞
+							</div>
+							<div
+								class="stat-label"
+								style="font-size: 16px; font-weight: 500"
+							>
+								uśmiechów
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sekcja galerii zdjęć (karuzela 3 obrazów) -->
+		<section
+			class="image-gallery-section py-5"
+			style="background: rgba(139, 75, 122, 0.1)"
+		>
+			<div class="container">
+				<div class="text-center mb-5">
+					<h3 style="color: #2c2c2c">
+						Nasza <span style="color: #801039">galeria</span>
+					</h3>
+				</div>
+
+				<div class="image-carousel-container">
+					<!-- Strzałka: poprzedni slajd -->
+					<button
+						class="carousel-arrow carousel-arrow-left"
+						aria-label="Poprzedni slajd"
+						onclick="prevImage()"
+					>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M15 18L9 12L15 6"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+
+					<!-- Lista slajdów w karuzeli -->
+					<div class="image-carousel">
+						<div class="image-slide image-slide-left">
+							<img
+  data-src="../images/360.png"
+								alt="Gallery image"
+								loading="lazy"
+								class="gallery-lazy"
+							/>
+						</div>
+						<div class="image-slide image-slide-center active">
+							<img
+  data-src="../images/mirror.jpg"
+								alt="Gallery image"
+								loading="lazy"
+								class="gallery-lazy"
+							/>
+						</div>
+						<div class="image-slide image-slide-right">
+							<img
+  data-src="../images/heavysmoke.jpg"
+								alt="Gallery image"
+								loading="lazy"
+								class="gallery-lazy"
+							/>
+						</div>
+					</div>
+
+					<!-- Strzałka: następny slajd -->
+					<button
+						class="carousel-arrow carousel-arrow-right"
+						aria-label="Następny slajd"
+						onclick="nextImage()"
+					>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M9 18L15 12L9 6"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sekcja: Gdzie działamy -->
+		<section
+			class="locations-section py-5"
+			style="background: rgba(255, 255, 255, 0.9)"
+		>
+			<div class="container text-center">
+				<button
+					class="locations-trigger-btn"
+					onclick="showLocationsOverlay()"
+					style="
+						background: #801039;
+						color: white;
+						border: none;
+						padding: 15px 40px;
+						border-radius: 25px;
+						font-size: 18px;
+						font-weight: 500;
+						cursor: pointer;
+						transition: all 0.3s ease;
+						box-shadow: 0 5px 15px rgba(128, 16, 57, 0.3);
+					"
+					onmouseover="this.style.background='#a01447'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(128, 16, 57, 0.4)'"
+					onmouseout="this.style.background='#801039'; this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(128, 16, 57, 0.3)'"
+				>
+					Gdzie działamy?
+				</button>
+			</div>
+		</section>
+
+		<!-- Overlay z listą miast -->
+		<div id="locationsOverlay" class="locations-overlay">
+			<div class="overlay-content">
+				<!-- Przycisk zamknięcia -->
+				<button class="close-overlay" onclick="hideLocationsOverlay()">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path
+							d="M18 6L6 18M6 6l12 12"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+						/>
+					</svg>
+				</button>
+
+				<!-- Nagłówek -->
+				<h2 class="overlay-title">Gdzie działamy?</h2>
+
+				<!-- Lista miast -->
+				<div class="cities-container">
+					<div class="cities-column">
+						<ul class="cities-list text-center">
+							<li><a href="#">Chojnice</a></li>
+							<li><a href="#">Gdańsk</a></li>
+							<li><a href="#">Sopot</a></li>
+							<li><a href="#">Gdynia</a></li>
+							<li><a href="#">Bytów</a></li>
+							<li><a href="#">Kartuzy</a></li>
+							<li><a href="#">Kościerzyna</a></li>
+							<li><a href="#">Słupsk</a></li>
+						</ul>
+					</div>
+					<div class="cities-column">
+						<ul class="cities-list text-center">
+							<li><a href="#">Lębork</a></li>
+							<li><a href="#">Ustka</a></li>
+							<li><a href="#">Malbork</a></li>
+							<li><a href="#">Tczew</a></li>
+							<li><a href="#">Wejherowo</a></li>
+							<li><a href="#">Puck</a></li>
+							<li><a href="#">Hel</a></li>
+							<li><a href="#">Starogard Gdański</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sekcja Footer: Kontakt i prawa autorskie -->
+		<footer
+			class="contact-footer"
+			style="
+				background: #eec9d2;
+				padding: 60px 0 40px 0;
+				position: relative;
+				margin-top: 0;
+			"
+			id="contact"
+		>
+			<div class="container">
+				<div class="row">
+					<!-- Kolumna: Informacje kontaktowe -->
+					<div class="col-lg-8">
+						<h3
+							style="
+								color: #801039;
+								font-weight: bold;
+								font-size: 42px;
+								margin-bottom: 40px;
+								line-height: 1.2;
+							"
+						>
+							Dotrzyj do nas za pomocą
+						</h3>
+
+						<div class="contact-info">
+							<!-- Kontakt: Facebook -->
+							<div
+								class="contact-item"
+								style="
+									display: flex;
+									align-items: center;
+									margin-bottom: 25px;
+									font-size: 24px;
+									color: #2c2c2c;
+								"
+							>
+								<div
+									style="
+										width: 40px;
+										height: 40px;
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										margin-right: 20px;
+									"
+								>
+                                    <img
+                                        src="../images/fb.svg"
+										alt="Facebook"
+										style="width: 32px; height: 32px"
+									/>
+								</div>
+								<a
+									href="https://www.facebook.com/profile.php?id=61553668165091"
+									target="_blank"
+									style="
+										font-weight: 500;
+										color: #2c2c2c;
+										text-decoration: none;
+									"
+									onmouseover="this.style.color='#801039'"
+									onmouseout="this.style.color='#2c2c2c'"
+									>@OG Eventspot</a
+								>
+							</div>
+
+							<!-- Kontakt: Instagram -->
+							<div
+								class="contact-item"
+								style="
+									display: flex;
+									align-items: center;
+									margin-bottom: 25px;
+									font-size: 24px;
+									color: #2c2c2c;
+								"
+							>
+								<div
+									style="
+										width: 40px;
+										height: 40px;
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										margin-right: 20px;
+									"
+								>
+                                    <img
+                                        src="../images/insta.svg"
+										alt="Instagram"
+										style="width: 32px; height: 32px"
+									/>
+								</div>
+								<a
+									href="https://www.instagram.com/og.eventspot/"
+									target="_blank"
+									style="
+										font-weight: 500;
+										color: #2c2c2c;
+										text-decoration: none;
+									"
+									onmouseover="this.style.color='#801039'"
+									onmouseout="this.style.color='#2c2c2c'"
+									>@og.eventspot</a
+								>
+							</div>
+
+							<!-- Kontakt: Telefon -->
+							<div
+								class="contact-item"
+								style="
+									display: flex;
+									align-items: center;
+									margin-bottom: 25px;
+									font-size: 24px;
+									color: #2c2c2c;
+								"
+							>
+								<div
+									style="
+										width: 40px;
+										height: 40px;
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										margin-right: 20px;
+									"
+								>
+                                    <img
+                                        src="../images/phone.svg"
+										alt="Phone"
+										style="width: 32px; height: 32px"
+									/>
+								</div>
+								<a
+									href="tel:727323442"
+									style="
+										font-weight: 500;
+										color: #2c2c2c;
+										text-decoration: none;
+									"
+									onmouseover="this.style.color='#801039'"
+									onmouseout="this.style.color='#2c2c2c'"
+									>576 934 594</a
+								>
+							</div>
+						</div>
+					</div>
+
+					<!-- Kolumna: Prawa autorskie -->
+					<div
+						class="col-lg-4 d-flex align-items-center justify-content-center"
+					>
+						<div
+							style="
+								text-align: right;
+								color: #666;
+								font-size: 14px;
+								font-weight: 400;
+							"
+						>
+							© 2025 - Wszelkie prawa zastrzeżone
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+        <!-- GSAP Library (loaded from CDN for animations) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+        <!-- Custom JavaScript (animations and interactions) -->
+        <script src="../script.js"></script>
+
+        <!-- Define the PAGE_ID for the main page (id=1). This value is used
+             by dataLoader.js to fetch content from the backend. -->
+        <!-- Data loader to fetch dynamic content from the backend and
+             update the DOM elements (nav, welcome header, stats,
+             gallery, locations, footer). -->
+        <script src="../js/dataLoader.js"></script>
+
+		<!-- Lazy loading support -->
+		<script>
+			// Simple lazy loading without WebP conversion
+			function loadImageSafely(img) {
+				if (!img.dataset.src) return;
+
+				img.onload = function () {
+					img.classList.add("loaded");
+				};
+
+				img.onerror = function () {
+					console.warn("Failed to load image:", img.dataset.src);
+					// Fallback to placeholder SVG
+					img.src =
+						"data:image/svg+xml;base64," +
+						btoa(
+							'<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">' +
+								'<rect width="100%" height="100%" fill="#f0f0f0"/>' +
+								'<text x="50%" y="50%" font-family="Arial" font-size="14" fill="#999" text-anchor="middle" dy=".3em">Obraz niedostępny</text>' +
+								"</svg>"
+						);
+					img.classList.add("loaded", "error");
+				};
+
+				img.src = img.dataset.src;
+			}
+
+			// Intersection Observer for lazy loading
+			if ("IntersectionObserver" in window) {
+				const imageObserver = new IntersectionObserver(
+					(entries, observer) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								const img = entry.target;
+								loadImageSafely(img);
+								observer.unobserve(img);
+							}
+						});
+					},
+					{
+						rootMargin: "50px 0px",
+						threshold: 0.1,
+					}
+				);
+
+				document.addEventListener("DOMContentLoaded", function () {
+					document
+						.querySelectorAll("img[data-src]")
+						.forEach((img) => {
+							// Add loading class for CSS styling
+							img.classList.add("lazy-loading");
+							imageObserver.observe(img);
+						});
+				});
+			} else {
+				// Fallback for older browsers
+				document.addEventListener("DOMContentLoaded", function () {
+					document
+						.querySelectorAll("img[data-src]")
+						.forEach(loadImageSafely);
+				});
+			}
+		</script>
+
+        <!-- Register plugins and Lenis smooth scroll (loaded from CDN) -->
+        <script>
+            // ScrollTrigger is already included via CDN, so register it
+            gsap.registerPlugin(ScrollTrigger);
+        </script>
+        <!-- Lenis smooth scrolling library -->
+        <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.5/bundle.min.js"></script>
+        <script>
+            const lenis = new Lenis({
+                duration: 0.3, // scroll speed
+                easing: (t) => t * (2 - t), // easing curve
+            });
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+        </script>
+	</body>
+</html>

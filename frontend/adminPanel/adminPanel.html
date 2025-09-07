@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel Administracyjny</title>
+    <!-- Use the Bootstrap CDN bundled with the original project to keep styles consistent -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for the admin panel (copied from the provided CSS) -->
+    <!-- Use root-relative path for CSS to ensure styles load on nested routes -->
+    <link href="/adminPanel/adminPanel.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar Navigation -->
+        <div class="col-md-2 sidebar">
+          <div class="sidebar-header">
+            <div class="logo">
+              <img src="/images/og-events-logo-black.webp" alt="OG Events Logo" width="100px" />
+            </div>
+            <h5>Admin panel</h5>
+          </div>
+          <!-- Pages list will be populated dynamically by adminPanel.js -->
+          <ul id="pages-list" class="nav flex-column sidebar-nav">
+            <!-- Existing pages and the add page button will be injected here -->
+          </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-10 main-content">
+          <div class="content-header">
+            <span class="edit-notice">Aktualnie edytujesz: Strona główna</span>
+          </div>
+          <div class="content-body">
+            <!-- Navigation Section -->
+            <div class="section">
+              <h4>Nawigacja</h4>
+              <div class="form-group">
+                <label>Odnośnik ikony Facebook w nawigacji:</label>
+                <input type="text" class="form-control" id="nav-facebook" />
+              </div>
+              <div class="form-group">
+                <label>Odnośnik ikony Instagram w nawigacji:</label>
+                <input type="text" class="form-control" id="nav-instagram" />
+              </div>
+            </div>
+            <!-- Video frames Section -->
+            <div class="section">
+              <h4>Video frames</h4>
+              <!-- Hidden input for selecting multiple video/image files -->
+              <input type="file" id="video-upload" multiple accept="video/*,image/*" style="display:none" />
+              <div id="video-container" class="video-frames"></div>
+              <button class="btn btn-secondary" id="video-upload-btn">Dodaj wideo/ramki</button>
+            </div>
+            <!-- Welcome header Section -->
+            <div class="section">
+              <h4>Welcome header</h4>
+              <div class="form-group">
+                <label>Nagłówek:</label>
+                <input type="text" class="form-control" id="welcome-title" />
+              </div>
+              <div class="form-group">
+                <label>Podtytuł:</label>
+                <input type="text" class="form-control" id="welcome-subtitle" />
+              </div>
+            </div>
+            <!-- Statistics Section -->
+            <div class="section">
+              <h4>Statystyki</h4>
+              <div id="stats-container"></div>
+              <div class="row g-2 align-items-end mt-2">
+                <div class="col-md-4">
+                  <label class="form-label">Nazwa nowej statystyki:</label>
+                  <input type="text" id="new-stat-label" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Wartość:</label>
+                  <input type="text" id="new-stat-value" class="form-control" />
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary" id="add-stat-btn" style="margin-top: 32px;">Dodaj statystykę</button>
+                </div>
+              </div>
+            </div>
+            <!-- Gallery Section -->
+            <div class="section">
+              <h4>Galeria</h4>
+              <input type="file" id="gallery-upload" multiple accept="image/*" style="display:none" />
+              <div id="gallery-container" class="video-frames"></div>
+              <button class="btn btn-secondary" id="gallery-upload-btn">Dodaj zdjęcia</button>
+            </div>
+            <!-- Locations Section -->
+            <div class="section">
+              <h4>Gdzie działamy?</h4>
+              <div id="locations-container"></div>
+              <div class="form-group d-flex align-items-end gap-2 mt-2">
+                <div class="flex-grow-1">
+                  <label>Dodaj miasto:</label>
+                  <input type="text" id="new-location-name" class="form-control" />
+                </div>
+                <button class="btn btn-primary btn-sm" id="add-location-btn">Dodaj</button>
+              </div>
+            </div>
+            <!-- Footer Section -->
+            <div class="section">
+              <h4>Stopka</h4>
+              <div class="form-group">
+                <label>Odnośnik ikony Facebook w stopce:</label>
+                <input type="text" class="form-control" id="footer-facebook" />
+              </div>
+              <div class="form-group">
+                <label>Odnośnik ikony Instagram w stopce:</label>
+                <input type="text" class="form-control" id="footer-instagram" />
+              </div>
+              <div class="form-group">
+                <label>Numer telefonu:</label>
+                <input type="text" class="form-control" id="footer-phone" />
+              </div>
+            </div>
+
+            <!-- Save changes button -->
+            <div class="section">
+              <button class="btn btn-success" id="save-changes-btn">Zapisz zmiany</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Link to admin panel JavaScript -->
+    <!-- Load adminPanel.js using root-relative path so it loads regardless of nested route -->
+    <script src="/js/adminPanel.js"></script>
+  </body>
+</html>
